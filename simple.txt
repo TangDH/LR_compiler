@@ -1,0 +1,16 @@
+S'->S
+S->int id ( id_lists ) { stmts }
+id_lists->id
+id_lists->id_lists , id
+stmts->stmt
+stmts->stmts ; stmt
+stmt->id = expr
+stmt->$
+expr->expr + term
+expr->expr - term
+expr->term
+term->term * factor
+term->term / factor
+term->factor
+factor->id
+factor->num
